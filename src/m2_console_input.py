@@ -2,8 +2,8 @@
 This module demonstrates lets you practice INPUT from the CONSOLE.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and alex huber.
+"""  # done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -15,6 +15,9 @@ def main():
 
 
 def double_a_float():
+
+    x = float(input('float please'))
+    print(x*2)
     """
     What comes in: Nothing.
     What goes out: Nothing (i.e. None)
@@ -30,12 +33,15 @@ def double_a_float():
          -6.28
     """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # done: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
 
 
 def print_an_integer_many_times():
+    x = int(input('positive int please'))
+    for k in range(x):
+        print(x*2)
     """
     What comes in: Nothing.
     What goes out: Nothing (i.e. None)
@@ -61,12 +67,15 @@ def print_an_integer_many_times():
          10
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # done: 3. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
 
 
 def print_an_integer_many_times_on_one_row():
+    x = int(input('int again'))
+    a = str(x*2) * x
+    print(int(a))
     """
     Same as the previous problem, but print the numbers
     on a single line with no spaces in between them.
@@ -80,7 +89,7 @@ def print_an_integer_many_times_on_one_row():
          1010101010
     """
     # ------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # done: 4. Implement and test this function.
     #   The testing code is already written for you (above).
     #
     # HINT: One way to print on a SINGLE line is to build up a string
